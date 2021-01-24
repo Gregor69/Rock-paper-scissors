@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+
+<div>
+{% if player_1_choice == "rock" and player_2_choice == "scissors" %}
+<h2>{ Player_1 wins by playing rock}</h2>
+{% elif player_1_choice == "scissors" and player_2_choice == "rock"%}
+<h2>{ Player_2 wins by playing rock}</h2>
+{% elif player_1_choice == "paper" and player_2_choice == "rock" %}
+<h2>{ Player_1 wins by playing paper}</h2>
+{% elif player_1_choice == "rock" and player_2_choice == "paper" %}
+<h2>{ Player_2 wins by playing paper}</h2>
+{% elif player_1_choice == "paper" and player_2_choice == "scissors" %}
+<h2>{ Player 2 wins by playing scissors }</h2>
+{% elif player_1_choice == "scissors" and player_2_choice == "paper" %}
+<h2>{ Player_1 wins by playing scissors }</h2>
+{% elif player_1_choice == player_2_choice %}
+<h2> { None } </h2>
+{% endif %}
+</div>
